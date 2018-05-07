@@ -39,15 +39,15 @@ class DoubanSpider(CrawlSpider):
             urllib.urlretrieve(self.captcha[0], filename="E:\zyb\githubs\douBanSpider\douBanSpider\spiders\captcha.png")
             captcha_value = raw_input('查看captcha.png,有验证码请输入:')
             data = {
-                "form_email": "815293528@qq.com",
-                "form_password": "ming1314920",
+                "form_email": "*******",
+                "form_password": "****",
                 "captcha-solution": captcha_value
             }
             print '验证码为：', captcha_value
         else:
             data = {
-                "form_email": "815293528@qq.com",
-                "form_password": "ming1314920",
+                "form_email": "*******",
+                "form_password": "*****",
             }
 
         return [
